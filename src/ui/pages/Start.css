@@ -1,0 +1,11 @@
+.start {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #27498a, #3664b4);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 24px;
+    padding-top: 25%;
+    overflow: hidden;
+}

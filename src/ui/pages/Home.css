@@ -1,0 +1,100 @@
+.home {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #27498a, #3664b4);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 24px;
+    padding-top: 15%;
+    overflow: hidden;
+}
+
+.home_img {
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(-10%);
+}
+
+.home_title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    animation: slideToBottom 1s ease-in-out;
+}
+
+@keyframes slideToBottom {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.menu_button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    border-color: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    animation: slideToStart 1s ease-in-out;
+}
+
+@keyframes slideToStart {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.menu_button-start {
+    background-color: rgb(255, 190, 10);
+    color: black;
+}
+
+@media (min-width: 770px) {
+    .home_img {
+        width: 30%;
+    }
+
+    .menu_button {
+        width: 40%;
+    }
+}
+
+@keyframes borderCroma {
+    0% {
+        border-color: rgb(255, 0, 191);
+    }
+    25% {
+        border-color: rgb(255, 230, 0);
+    }
+    50% {
+        border-color: rgb(255, 0, 191);
+    }
+    75% {
+        border-color: rgb(255, 230, 0)
+    }
+    100% {
+        border-color: rgb(255, 0, 191);
+    }
+}
